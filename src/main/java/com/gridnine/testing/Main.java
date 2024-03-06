@@ -1,6 +1,5 @@
 package com.gridnine.testing;
 
-import com.gridnine.testing.service.FlightFilter;
 import com.gridnine.testing.service.FlightFilterImpl;
 
 import java.util.List;
@@ -11,14 +10,13 @@ public class Main {
 
         FlightFilterImpl filter = new FlightFilterImpl();
 
-
         System.out.printf("All flights:\n%s",flights);
         System.out.println();
-        System.out.printf("DepartureBeforeCurrentTime:\n"+filter.DepartureBeforeCurrentTime(flights));
+        System.out.printf("DepartureWithoutBeforeCurrentTime:\n"+filter.DepartureWithoutBeforeCurrentTime(flights));
         System.out.println();
-        System.out.printf("SegmentArrivalBeforeDeparture:\n"+filter.SegmentArrivalBeforeDeparture(flights));
+        System.out.printf("SegmentWithoutArrivalBeforeDeparture:\n"+filter.SegmentWithoutArrivalBeforeDeparture(flights));
         System.out.println();
-        System.out.printf("FlightOnEarthMoreTwoHours:\n"+filter.FlightOnEarthMoreTwoHours(flights));
+        System.out.printf("FlightWithoutOnEarthMoreTwoHours:\n"+filter.FlightWithoutOnEarthMoreTwoHours(flights));
 
 
 

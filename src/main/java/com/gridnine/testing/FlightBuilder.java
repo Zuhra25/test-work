@@ -7,7 +7,6 @@ import java.util.List;
 
 /**
  * Factory class to get sample list of flights.
- * Фабричный класс, чтобы получить примерный список рейсов.
  */
 public class FlightBuilder {
 
@@ -42,7 +41,6 @@ public class FlightBuilder {
         if ((dates.length % 2) != 0) {
             throw new IllegalArgumentException(
                     "you must pass an even number of dates");
-            //«вы должны передать четное количество дат»
         }
         List<Segment> segments = new ArrayList<>(dates.length / 2);
         for (int i = 0; i < (dates.length - 1); i += 2) {

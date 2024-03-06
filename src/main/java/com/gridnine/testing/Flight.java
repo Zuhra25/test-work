@@ -5,7 +5,6 @@ import java.util.stream.Collectors;
 
 /**
  * Bean that represents a flight.
- * Бин, представляющий полет.
  */
 public class Flight {
     private final List<Segment> segments;
